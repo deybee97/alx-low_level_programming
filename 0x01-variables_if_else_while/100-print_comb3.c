@@ -15,6 +15,7 @@ int main(void)
 	{
 		int num1 = first;
 		int num2 = second;
+
 		while (num1 <= 8)
 		{
 			putchar(first + '0');
