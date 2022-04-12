@@ -12,15 +12,16 @@ int main(void)
 
 	while (count <= d)
 	{
-		total += 3 * count;
+		total += a * count;
 
-		if(5  * count < 1024 && (5 * count ) % 3 !=0)
+		if(b  * count < 1024 && (b * count ) % 3 !=0)
 		{
-			total += 5 * count;
+			total += b * count;
 		}
 		
 		count++;
 	}
 	printf("%d\n", total);
+	return (0)
 }
 		
