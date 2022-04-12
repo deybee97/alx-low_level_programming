@@ -24,10 +24,8 @@ int main(void)
 		{
 			total += b * count;
 		}
-		
 		count++;
 	}
 	printf("%d\n", total);
 	return (0);
-}
-		
+}		
