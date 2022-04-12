@@ -16,7 +16,7 @@ int print_sign(int c)
 	{
 		output = 1;
 		say = '+';
-	}	
+	}
 	else if (c < 0)
 	{
 		output = -1;
