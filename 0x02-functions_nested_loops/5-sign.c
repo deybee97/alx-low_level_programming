@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 /**
  * print_sign - the alphabet, in lowercase, followed by a new line.
  *
@@ -22,6 +22,7 @@ int print_sign(int c)
 		output = -1;
 		say = '-';
 	}
-	putchar(say);
+	_putchar(say);
 	return (output);
+	_putchar('\n');
 }
