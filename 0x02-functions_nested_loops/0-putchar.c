@@ -10,7 +10,8 @@ int main(void)
 	char _putchar[8] = "_putchar";
 
 	int count = 0;
-	while(count < 8)
+
+	while (count < 8)
 	{
 		putchar(_putchar[count]);
 		count++;
