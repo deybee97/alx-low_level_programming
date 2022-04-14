@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "_putchar.c"
-
+#include "main.h"
 /**
  * _isupper - check if input is uppercase
  * @c: input is an alphabet
