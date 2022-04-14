@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * mul - multiplies two integers
- * @a - first integer
- * @b - seconf integer
+ * mul - multiplies two integers.
+ * @a: first integer
+ * @b: seconf integer
  *
- * Return - multiplication of a and b
+ * Return: multiplication of a and b
  */
 
 int mul(int a, int b)
