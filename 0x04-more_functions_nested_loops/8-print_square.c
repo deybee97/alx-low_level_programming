@@ -4,9 +4,9 @@
 /**
  * print_square -  prints a square, followed by a new line.
  *
- * @size - size of square
+ * @size: size of square
  *
- * Return - 0
+ * Return: 0
  */
 
 void print_square(int size)
@@ -16,6 +16,10 @@ void print_square(int size)
 
 	len = size;
 	bre = size;
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
 	while (len > 0)
 	{
 		while (bre > 0)
