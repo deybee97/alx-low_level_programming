@@ -10,7 +10,7 @@ int main(void)
 {
 	int i = 1;
 
-	while (i <= 100)
+	do
 	{
 		if (i % 15 == 0)
 		{
@@ -28,8 +28,11 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		printf(" ");
 		i++;
+	}
+	while(i <= 100)
+	{
+		printf(" ");
 	}
 	printf("\n");
 	return (0);
