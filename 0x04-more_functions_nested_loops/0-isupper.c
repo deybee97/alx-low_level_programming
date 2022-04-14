@@ -11,10 +11,10 @@
 int _isupper(int c)
 {
 	int output = 0;
+
 	if (isupper(c))
 	{
 		output = 1;
 	}
-	
 	return (output);
 }
