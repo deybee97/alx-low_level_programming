@@ -7,7 +7,7 @@
  * Return: no return.
  */
 
-void put_half(char *str)
+void puts_half(char *str)
 {
 	int count = 0, i;
 
