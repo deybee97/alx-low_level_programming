@@ -10,20 +10,24 @@
 
 char *cap_string(char *s)
 {
-	int i;
-	bool space = false;
+	int count = 0, i;
+	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	for (i = 0; s[i] != '\0'; i++)
+	if (*(s + count) >= 97 && *(s + count) <= 122)
+		*(s + count) = *(s + count) - 32;
+	count++;
+	while (*(s + count) != '\0')
 	{
-		if (s[i] == 32 || s[i] == 9 || s[i] == 46 || s[i] == '\n')
-			space = true;
-		else if (s[i] >= 'a' && s[i] <= 'z' && space)
+		for (i = 0; i < 13; i++)
 		{
-			s[i] -= 32;
-			space = false;
+			if (*(s + count) == sep_words[i])
+			{
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				break;
+			}
 		}
-		else
-			space = false;
+		count++;
 	}
 	return (s);
 }
