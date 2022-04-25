@@ -15,7 +15,7 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == 32 || s[i] == 9 || s[i] == 46 || s[i] == '\n' || i == 0)
+		if (s[i] == 32 || s[i] == 9 || s[i] == 46 || s[i] == '\n')
 			space = true;
 		else if (s[i] >= 'a' && s[i] <= 'z' && space)
 		{
