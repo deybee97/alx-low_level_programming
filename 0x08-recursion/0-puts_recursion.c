@@ -1,22 +1,17 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - prints the sum of the two
- * diagonals of a square matrix of integers
- * @a: input pointer.
- * @size: size of the matrix
+ * _puts_recursion - prints a string, followed by a new line.
+ * @s: string
  * Return: no return.
  */
-void print_diagsums(int *a, int size)
+void _puts_recursion(char *s)
 {
-	int i, sum1 = 0, sum2 = 0;
-
-	for (i = 0; i < (size * size); i++)
+	if (*s != '\0')
 	{
-		if (i % (size + 1) == 0)
-			sum1 += *(a + i);
-		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
-			sum2 += *(a + i);
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
-	printf("%d, %d\n", sum1, sum2);
+	else
+		_putchar('\n');
 }
