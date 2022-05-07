@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - print function name.
@@ -10,26 +11,20 @@
 
 int main(int argc, char *argv[])
 {
-	int count = 1;
-	int sum = 0;
+	int i, j, add = 0;
 
-	if (argc < 2)
+	for (i = 1; i < argc; i++)
 	{
-		printf("%d\n", 0);
-		return (1);
-	}
-	else
-	{
-		for (; count < argc; count++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (atoi(argv[count]) == 0)
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			sum += atoi(argv[count]);
 		}
-		printf("%d\n", sum);
+		add += atoi(argv[i]);
 	}
+	printf("%d\n", add);
 	return (0);
 }
